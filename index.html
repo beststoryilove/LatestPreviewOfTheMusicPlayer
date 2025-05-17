@@ -31,7 +31,7 @@
             bottom: 20px;
             right: 20px;
             padding: 10px 15px;
-            background-color: #1ed760; /* 修改为更柔和的绿色 */
+            background-color: #1db954;
             color: white;
             border: none;
             border-radius: 25px;
@@ -44,7 +44,7 @@
         }
         
         .save-wallpaper:hover {
-            background-color: #2efd80; /* 更亮的绿色悬停效果 */
+            background-color: #1ed760;
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
         }
@@ -63,7 +63,7 @@
         
         .playlist-container {
             width: 250px;
-            background-color: rgba(30, 30, 30, 0.8); /* 提高不透明度 */
+            background-color: rgba(30, 30, 30, 0.7);
             border-radius: 15px;
             padding: 15px;
             backdrop-filter: blur(8px);
@@ -86,7 +86,7 @@
         .playlist-title {
             font-size: 18px;
             font-weight: bold;
-            color: #1ed760; /* 修改为更柔和的绿色 */
+            color: #1db954;
         }
         
         .clear-playlist {
@@ -122,7 +122,7 @@
         }
         
         .playlist-item.active {
-            background-color: rgba(30, 215, 96, 0.2); /* 修改为更柔和的绿色 */
+            background-color: rgba(29, 185, 84, 0.2);
         }
         
         .playlist-item-info {
@@ -159,7 +159,7 @@
         
         .container {
             flex: 1;
-            background-color: rgba(30, 30, 30, 0.8); /* 提高不透明度 */
+            background-color: rgba(30, 30, 30, 0.7);
             border-radius: 15px;
             padding: 20px;
             backdrop-filter: blur(8px);
@@ -173,7 +173,7 @@
         h1 {
             text-align: center;
             margin-bottom: 20px;
-            color: #1ed760; /* 修改为更柔和的绿色 */
+            color: #1db954;
         }
         
         .search-container {
@@ -194,7 +194,7 @@
         
         .search-button {
             padding: 12px 20px;
-            background-color: #1ed760; /* 修改为更柔和的绿色 */
+            background-color: #1db954;
             color: white;
             border: none;
             border-radius: 0 25px 25px 0;
@@ -204,7 +204,7 @@
         }
         
         .search-button:hover {
-            background-color: #2efd80; /* 更亮的绿色悬停效果 */
+            background-color: #1ed760;
         }
         
         .search-results {
@@ -230,7 +230,7 @@
         }
         
         .result-item.active {
-            background-color: rgba(30, 215, 96, 0.2); /* 修改为更柔和的绿色 */
+            background-color: rgba(29, 185, 84, 0.2);
         }
         
         .song-info {
@@ -251,7 +251,7 @@
         .add-to-playlist {
             background: none;
             border: none;
-            color: #1ed760; /* 修改为更柔和的绿色 */
+            color: #1db954;
             cursor: pointer;
             font-size: 20px;
             margin-left: 10px;
@@ -320,7 +320,7 @@
         
         .progress {
             height: 100%;
-            background-color: #1ed760; /* 修改为更柔和的绿色 */
+            background-color: #1db954;
             border-radius: 5px;
             width: 0%;
         }
@@ -360,7 +360,7 @@
         }
         
         .play-button {
-            background-color: #1ed760; /* 修改为更柔和的绿色 */
+            background-color: #1db954;
             width: 50px;
             height: 50px;
             font-size: 28px;
@@ -373,7 +373,7 @@
         }
         
         .play-button:hover {
-            background-color: #2efd80; /* 更亮的绿色悬停效果 */
+            background-color: #1ed760;
         }
         
         .volume-container {
@@ -403,7 +403,7 @@
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background: #1ed760; /* 修改为更柔和的绿色 */
+            background: #1db954;
             cursor: pointer;
         }
         
@@ -432,20 +432,12 @@
             line-height: 1.6;
             transition: all 0.3s;
             min-height: 24px;
-            padding: 8px 12px;
-            border-radius: 6px;
-        }
-        
-        /* 添加歌词行悬停效果 */
-        .lyric-line:hover {
-            background-color: rgba(255, 255, 255, 0.1);
         }
         
         .lyric-line.active {
             color: #fff;
             font-size: 18px;
             font-weight: bold;
-            background-color: rgba(30, 215, 96, 0.1); /* 修改为更柔和的绿色 */
         }
         
         .lyric-line.translation {
@@ -482,7 +474,7 @@
         }
         
         .page-button.active {
-            background-color: #1ed760; /* 修改为更柔和的绿色 */
+            background-color: #1db954;
         }
         
         .page-button:hover:not(.active) {
@@ -581,11 +573,146 @@
             border-radius: 25px;
             width: 100%;
         }
+
+        .share-music {
+            position: fixed;
+            bottom: 120px;
+            right: 20px;
+            padding: 8px 12px;
+            background-color: #4a76a8;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 12px;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            max-width: 180px;  /* 限制最大宽度 */
+            white-space: nowrap;  /* 防止文字换行 */
+            overflow: hidden;
+            text-overflow: ellipsis;  /* 文字过长显示省略号 */
+        }
+
+        .share-music:hover {
+            background-color: #5b8ac6;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .share-music:active {
+            transform: translateY(0);
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #282828;
+            border-radius: 15px;
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 80vh;
+            overflow: auto;
+        }
+
+        .share-song-list {
+            margin-bottom: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .share-song-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .share-song-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .share-song-info {
+            flex: 1;
+        }
+
+        .share-song-title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .share-song-artist {
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .export-button, .import-button, .close-button {
+            padding: 10px 15px;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .export-button {
+            background-color: #1db954;
+        }
+
+        .export-button:hover {
+            background-color: #1ed760;
+        }
+
+        .import-button {
+            background-color: #4a76a8;
+        }
+
+        .import-button:hover {
+            background-color: #5b8ac6;
+        }
+
+        .close-button {
+            background-color: #ff4d4d;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .close-button:hover {
+            background-color: #ff6666;
+        }
+
+        /* 移动端调整 */
+        @media (max-width: 768px) {
+            .modal-content {
+                padding: 15px;
+            }
+            
+            .export-button, .import-button, .close-button {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
         }
     </style>
 </head>
 <body>
-    <!-- 壁纸保存按钮 -->
+    <!-- 壁纸保存按钮及歌曲分享按钮 -->
+    <button class="share-music" id="shareMusicBtn">发现了宝藏歌曲想分享？点我！</button>
     <button class="save-wallpaper" id="saveWallpaperBtn">壁纸好看吗？点我立即保存！</button>
     
     <div class="main-wrapper">
@@ -683,6 +810,7 @@
         const clearPlaylist = document.getElementById('clearPlaylist');
         const saveWallpaperBtn = document.getElementById('saveWallpaperBtn');
         const lyricsContent = document.getElementById('lyricsContent');
+        const shareMusicBtn = document.getElementById('shareMusicBtn');
         
         // 全局变量
         let currentPage = 1;
@@ -1372,7 +1500,7 @@
                         playPrompt.style.bottom = '20px';
                         playPrompt.style.left = '50%';
                         playPrompt.style.transform = 'translateX(-50%)';
-                        playPrompt.style.backgroundColor = '#1ed760';
+                        playPrompt.style.backgroundColor = '#1db954';
                         playPrompt.style.color = 'white';
                         playPrompt.style.padding = '10px 20px';
                         playPrompt.style.borderRadius = '25px';
@@ -1451,6 +1579,270 @@
         
         // 清空播放列表
         clearPlaylist.addEventListener('click', clearPlaylistItems);
+
+        shareMusicBtn.addEventListener('click', () => {
+            if (playlist.length === 0) {
+                showError('播放列表为空，无法分享');
+                return;
+            }
+
+            // 创建分享模态框
+            createShareModal();
+        });
+
+        // 创建分享模态框
+        function createShareModal() {
+            // 创建模态框背景
+            const modalOverlay = document.createElement('div');
+            modalOverlay.className = 'modal-overlay';
+            modalOverlay.style.position = 'fixed';
+            modalOverlay.style.top = '0';
+            modalOverlay.style.left = '0';
+            modalOverlay.style.width = '100%';
+            modalOverlay.style.height = '100%';
+            modalOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+            modalOverlay.style.zIndex = '1000';
+            modalOverlay.style.display = 'flex';
+            modalOverlay.style.justifyContent = 'center';
+            modalOverlay.style.alignItems = 'center';
+            
+            // 创建模态框内容
+            const modalContent = document.createElement('div');
+            modalContent.className = 'modal-content';
+            modalContent.style.backgroundColor = '#282828';
+            modalContent.style.borderRadius = '15px';
+            modalContent.style.padding = '20px';
+            modalContent.style.width = '90%';
+            modalContent.style.maxWidth = '500px';
+            modalContent.style.maxHeight = '80vh';
+            modalContent.style.overflow = 'auto';
+            
+            // 添加标题
+            const title = document.createElement('h2');
+            title.textContent = '分享歌曲';
+            title.style.color = '#1db954';
+            title.style.marginBottom = '20px';
+            title.style.textAlign = 'center';
+            modalContent.appendChild(title);
+            
+            // 添加说明
+            const instructions = document.createElement('p');
+            instructions.textContent = '选择要分享的歌曲（可多选），然后点击"导出分享文件"按钮';
+            instructions.style.color = '#aaa';
+            instructions.style.marginBottom = '20px';
+            instructions.style.fontSize = '14px';
+            modalContent.appendChild(instructions);
+            
+            // 创建歌曲列表
+            const songList = document.createElement('div');
+            songList.className = 'share-song-list';
+            songList.style.marginBottom = '20px';
+            songList.style.maxHeight = '300px';
+            songList.style.overflowY = 'auto';
+            
+            playlist.forEach((song, index) => {
+                const songItem = document.createElement('div');
+                songItem.className = 'share-song-item';
+                songItem.style.display = 'flex';
+                songItem.style.alignItems = 'center';
+                songItem.style.padding = '10px';
+                songItem.style.marginBottom = '5px';
+                songItem.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
+                songItem.style.borderRadius = '5px';
+                songItem.style.cursor = 'pointer';
+                
+                // 添加复选框
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = 'share-checkbox';
+                checkbox.dataset.index = index;
+                checkbox.style.marginRight = '10px';
+                
+                // 歌曲信息
+                const songInfo = document.createElement('div');
+                songInfo.className = 'share-song-info';
+                songInfo.style.flex = '1';
+                
+                const songTitle = document.createElement('div');
+                songTitle.className = 'share-song-title';
+                songTitle.textContent = song.name || '未知歌曲';
+                songTitle.style.fontWeight = 'bold';
+                songTitle.style.marginBottom = '3px';
+                
+                const songArtist = document.createElement('div');
+                songArtist.className = 'share-song-artist';
+                songArtist.textContent = Array.isArray(song.artist) ? song.artist.join('、') : song.artist || '未知歌手';
+                songArtist.style.fontSize = '12px';
+                songArtist.style.color = '#aaa';
+                
+                songInfo.appendChild(songTitle);
+                songInfo.appendChild(songArtist);
+                
+                songItem.appendChild(checkbox);
+                songItem.appendChild(songInfo);
+                
+                // 点击整行也可以选择
+                songItem.addEventListener('click', (e) => {
+                    if (e.target !== checkbox) {
+                        checkbox.checked = !checkbox.checked;
+                    }
+                });
+                
+                songList.appendChild(songItem);
+            });
+            
+            modalContent.appendChild(songList);
+            
+            // 添加操作按钮
+            const buttonContainer = document.createElement('div');
+            buttonContainer.style.display = 'flex';
+            buttonContainer.style.justifyContent = 'space-between';
+            
+            const exportButton = document.createElement('button');
+            exportButton.textContent = '导出分享文件';
+            exportButton.className = 'export-button';
+            exportButton.style.padding = '10px 15px';
+            exportButton.style.backgroundColor = '#1db954';
+            exportButton.style.color = 'white';
+            exportButton.style.border = 'none';
+            exportButton.style.borderRadius = '25px';
+            exportButton.style.cursor = 'pointer';
+            exportButton.style.flex = '1';
+            exportButton.style.marginRight = '10px';
+            
+            const importButton = document.createElement('button');
+            importButton.textContent = '导入分享文件';
+            importButton.className = 'import-button';
+            importButton.style.padding = '10px 15px';
+            importButton.style.backgroundColor = '#4a76a8';
+            importButton.style.color = 'white';
+            importButton.style.border = 'none';
+            importButton.style.borderRadius = '25px';
+            importButton.style.cursor = 'pointer';
+            importButton.style.flex = '1';
+            
+            const closeButton = document.createElement('button');
+            closeButton.textContent = '取消';
+            closeButton.className = 'close-button';
+            closeButton.style.padding = '10px 15px';
+            closeButton.style.backgroundColor = '#ff4d4d';
+            closeButton.style.color = 'white';
+            closeButton.style.border = 'none';
+            closeButton.style.borderRadius = '25px';
+            closeButton.style.cursor = 'pointer';
+            closeButton.style.marginTop = '10px';
+            closeButton.style.width = '100%';
+            
+            buttonContainer.appendChild(exportButton);
+            buttonContainer.appendChild(importButton);
+            modalContent.appendChild(buttonContainer);
+            modalContent.appendChild(closeButton);
+            
+            modalOverlay.appendChild(modalContent);
+            document.body.appendChild(modalOverlay);
+            
+            // 导出按钮事件
+            exportButton.addEventListener('click', () => {
+                const selectedCheckboxes = document.querySelectorAll('.share-checkbox:checked');
+                if (selectedCheckboxes.length === 0) {
+                    showError('请至少选择一首歌曲');
+                    return;
+                }
+                
+                const selectedSongs = Array.from(selectedCheckboxes).map(checkbox => {
+                    return playlist[parseInt(checkbox.dataset.index)];
+                });
+                
+                exportSongs(selectedSongs);
+                document.body.removeChild(modalOverlay);
+            });
+            
+            // 导入按钮事件
+            importButton.addEventListener('click', () => {
+                const fileInput = document.createElement('input');
+                fileInput.type = 'file';
+                fileInput.accept = '.json,.txt';
+                
+                fileInput.addEventListener('change', (e) => {
+                    const file = e.target.files[0];
+                    if (!file) return;
+                    
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                        try {
+                            const importedSongs = JSON.parse(event.target.result);
+                            if (Array.isArray(importedSongs)) {
+                                // 过滤掉已存在的歌曲
+                                const newSongs = importedSongs.filter(importedSong => 
+                                    !playlist.some(existingSong => existingSong.id === importedSong.id)
+                                );
+                                
+                                if (newSongs.length > 0) {
+                                    playlist = [...playlist, ...newSongs];
+                                    savePlaylist();
+                                    renderPlaylist();
+                                    showError(`成功导入 ${newSongs.length} 首歌曲`);
+                                } else {
+                                    showError('没有新歌曲可以导入');
+                                }
+                            } else {
+                                showError('无效的分享文件');
+                            }
+                        } catch (error) {
+                            showError('无法解析分享文件');
+                        }
+                    };
+                    reader.readAsText(file);
+                });
+                
+                fileInput.click();
+                document.body.removeChild(modalOverlay);
+            });
+            
+            // 关闭按钮事件
+            closeButton.addEventListener('click', () => {
+                document.body.removeChild(modalOverlay);
+            });
+            
+            // 点击模态框外部关闭
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) {
+                    document.body.removeChild(modalOverlay);
+                }
+            });
+        }
+
+        // 导出歌曲为文件
+        function exportSongs(songs) {
+            // 创建JSON数据
+            const exportData = JSON.stringify(songs, null, 2);
+            
+            // 创建Blob对象
+            const blob = new Blob([exportData], { type: 'application/json' });
+            
+            // 创建下载链接
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `音乐分享_${new Date().toLocaleDateString()}.json`;
+            
+            // 触发下载
+            document.body.appendChild(a);
+            a.click();
+            
+            // 清理
+            setTimeout(() => {
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }, 100);
+            
+            // 显示成功消息
+            const originalText = shareMusicBtn.textContent;
+            shareMusicBtn.textContent = `已导出 ${songs.length} 首歌曲！`;
+            setTimeout(() => {
+                shareMusicBtn.textContent = originalText;
+            }, 2000);
+        }
         
         // 初始化
         updateBackground();
