@@ -1,6 +1,6 @@
 # LatestPreviewOfTheMusicPlayer
 
-正式废弃809blog-Musicplayer及其附属项目，请移步至HarmoniaMusicplayer
+2025-11-13正式废弃809blog-Musicplayer及其附属项目，请移步至HarmoniaMusicplayer
 ![Harmonia](https://github.com/beststoryilove/Harmonia-MusicPlayer)
 
 更新进度v0.5-3（慢你就受着吧）
